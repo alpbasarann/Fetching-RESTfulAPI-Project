@@ -8,14 +8,14 @@ export default function() {
     const ListCards = mergersArray.map(mergers => {
     return (
 
-        <Name key={mergers.id}>
-            <Photo src={mergers.user.avatar_url}/> 
+        <Name key={mergers.id} data-testid="list-cards">
+            <Photo src={mergers.user.avatar_url}/>
             { mergers.user.login }
         </Name>
     )
     })
     return (
-        <div>
+        <div data-testid="list-cards-wrapper">
             {ListCards}
         </div>
     );

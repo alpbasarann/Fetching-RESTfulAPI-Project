@@ -3,8 +3,8 @@ const initialState = {
   mergers: [],
   error: ''
 };
-   
-const mergedPRs = (state=initialState, action) => {
+
+const mergedPRs = (state= initialState, action) => {
     switch (action.type) {
         case "FETCH_MERGERS_REQUEST":
           return {
@@ -26,5 +26,5 @@ const mergedPRs = (state=initialState, action) => {
         default: return state
       }
     }
-    
+
 export default mergedPRs
