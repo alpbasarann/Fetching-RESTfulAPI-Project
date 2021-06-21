@@ -1,5 +1,5 @@
 import React, { useEffect }  from 'react';
-import {fetchClosedPRs} from '../../actions';
+import {fetchClosedPRs} from '../../store/actions';
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux';
 import Loading from '../Slider';
