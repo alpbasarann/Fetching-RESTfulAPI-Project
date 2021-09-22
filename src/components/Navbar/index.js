@@ -13,7 +13,7 @@ const Navbar = () => {
                     Home Page
                 </NavLink>
                 <NavLink to='/MergerRanking'>
-                Merger Ranking
+                    Merger Ranking
                 </NavLink>
             </NavMenu>
         </Nav>

@@ -2,12 +2,10 @@ import React from 'react'
 import {Provider} from 'react-redux'
 import {render} from '@testing-library/react'
 import ListCards from '../'
-import { createStore } from 'redux'
-import reducers from '../../../reducers'
+import reducers from '../../../store/reducers'
 import DUMMY_DATA from '../dummy'
+import {store} from '../../../store'
 import '@testing-library/jest-dom/extend-expect'
-
-const store = createStore(reducers)
 
 store.dispatch({
   type: "FETCH_MERGERS_SUCCESS",
